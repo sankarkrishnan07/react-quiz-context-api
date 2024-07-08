@@ -100,7 +100,7 @@ function QuizProvider({ children }) {
             payload: "No data found",
           });
 
-        dispatch({ type: "ready", payload: data });
+        dispatch({ type: "ready", payload: data.questions });
       } catch (err) {
         dispatch({ type: "error", payload: err.message });
       }
