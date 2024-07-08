@@ -86,7 +86,7 @@ function QuizProvider({ children }) {
   useEffect(function () {
     async function fetchData() {
       try {
-        const res = await fetch("http://localhost:8000/questions");
+        const res = await fetch("https://sk-react-quiz.vercel.app/api/data");
         if (!res.ok)
           return dispatch({
             type: "error",
